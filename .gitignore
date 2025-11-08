@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+venv/
+env/
+
+# Modelo y datasets (pesados)
+modelo/*.pkl
+modelo/dataset/*.npy
+
+# IDEs
+.vscode/
+.idea/
+
+# OS
+.DS_Store
