@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Eikasia</title>
+    <link href="../static/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="layout">
+      <div class="sidebar">
+        <input type="checkbox" id="brush" name="tool" />
+        <label for="brush">Brush</label>
+
+        <input type="checkbox" id="eraser" name="tool" />
+        <label for="eraser">Eraser</label>
+
+        <button class="btn-16" id="btn-clear">Clear</button>
+      </div>
+
+      <div class="canvas-container">
+        <canvas id="draw"></canvas>
+      </div>
+    </div>
+  </body>
+  <script src="../static/js/canvas.js"></script>
+</html>
