@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #212121;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  height: 80vh;
+  width: 80vw;
+  background: #2b2b2b;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 3px solid #000;
+}
+
+.sidebar {
+  background: #1e1e1e;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px;
+}
+
+/* Ocultamos los inputs */
+.sidebar input[type="checkbox"] {
+  display: none;
+}
+
+/* Estilos visuales para los labels */
+.sidebar label,
+#btn-clear {
+  background: #3c3c3c;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  margin-top: 25px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 22px;
+  user-select: none;
+  transition:
+    background 0.2s,
+    transform 0.1s;
+}
+
+#btn-clear {
+  background: #c33;
+  border: 1px solid black;
+}
+
+.sidebar label:hover,
+#btn-clear:hover {
+  transform: scale(1.04);
+}
+
+/* Efecto al presionar */
+.sidebar label:active,
+#btn-clear:active {
+  transform: scale(0.96);
+}
+
+/* Cuando el input asociado está checked */
+.sidebar input[type="checkbox"]:checked + label {
+  background: #00aaff;
+}
+
+/* Canvas */
+.canvas-container {
+  background: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+canvas {
+  background: white;
+  border-radius: 8px;
+  width: 95%;
+  height: 95%;
+}
